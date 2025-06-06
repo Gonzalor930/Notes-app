@@ -1,0 +1,44 @@
+# GENERAL
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+*.swp
+
+# IDE Systems
+.idea/
+.vscode/
+*.iml
+
+# ENV VARIABLES
+.env
+.env.*
+
+# NODE / FRONTEND
+/frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.vite/
+frontend/.next/
+frontend/.turbo/
+
+# JAVA BACKEND
+/backend/target/
+backend/.classpath
+backend/.project
+backend/.settings/
+backend/build/
+backend/out/
+
+# TEST
+coverage/
+*.lcov
+
+# OTHERS
+*.zip
+*.rar
+*.tar
+*.gz
+*.jar
+*.war
