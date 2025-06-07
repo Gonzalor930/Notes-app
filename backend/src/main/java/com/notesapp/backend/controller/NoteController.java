@@ -52,4 +52,15 @@ public Note getNoteById(@PathVariable Long id) {
     return noteService.getById(id);
 }
 
+@PatchMapping("/{noteId}/add-category/{categoryId}")
+public Note addCategoryToNote(@PathVariable Long noteId, @PathVariable Long categoryId) {
+    return noteService.addCategory(noteId, categoryId);
+}
+
+@PatchMapping("/{noteId}/remove-category/{categoryId}")
+public Note removeCategoryFromNote(@PathVariable Long noteId, @PathVariable Long categoryId) {
+    return noteService.removeCategory(noteId, categoryId);
+}
+
+
 }

@@ -2,6 +2,8 @@ package com.notesapp.backend.model;
 
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "notes")
@@ -48,7 +50,22 @@ public class Note {
 
     public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }
 
-    
+    @ManyToMany
+@JoinTable(
+    name = "note_category",
+    joinColumns = @JoinColumn(name = "note_id"),
+    inverseJoinColumns = @JoinColumn(name = "category_id")
+)
+private Set<Category> categories = new HashSet<>();
+
+public Set<Category> getCategories() {
+    return categories;
+}
+
+public void setCategories(Set<Category> categories) {
+    this.categories = categories;
+}
+
 
 }
 
