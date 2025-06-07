@@ -24900,6 +24900,7 @@ parcelHelpers.export(exports, "default", ()=>App);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _appCss = require("./App.css");
 var _reactRouterDom = require("react-router-dom");
 var _activeNotes = require("./pages/ActiveNotes");
 var _activeNotesDefault = parcelHelpers.interopDefault(_activeNotes);
@@ -24918,7 +24919,7 @@ function App() {
                     children: "Notas App"
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 11,
+                    lineNumber: 12,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
@@ -24934,7 +24935,7 @@ function App() {
                             children: "Notas Activas"
                         }, void 0, false, {
                             fileName: "src/App.jsx",
-                            lineNumber: 13,
+                            lineNumber: 14,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -24945,7 +24946,7 @@ function App() {
                             children: "Notas Archivadas"
                         }, void 0, false, {
                             fileName: "src/App.jsx",
-                            lineNumber: 14,
+                            lineNumber: 15,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -24953,13 +24954,13 @@ function App() {
                             children: "Nueva Nota"
                         }, void 0, false, {
                             fileName: "src/App.jsx",
-                            lineNumber: 15,
+                            lineNumber: 16,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/App.jsx",
-                    lineNumber: 12,
+                    lineNumber: 13,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
@@ -24968,20 +24969,8 @@ function App() {
                             path: "/",
                             element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _activeNotesDefault.default), {}, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 18,
-                                columnNumber: 36
-                            }, void 0)
-                        }, void 0, false, {
-                            fileName: "src/App.jsx",
-                            lineNumber: 18,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            path: "/archived",
-                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _archivedNotesDefault.default), {}, void 0, false, {
-                                fileName: "src/App.jsx",
                                 lineNumber: 19,
-                                columnNumber: 44
+                                columnNumber: 36
                             }, void 0)
                         }, void 0, false, {
                             fileName: "src/App.jsx",
@@ -24989,11 +24978,11 @@ function App() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            path: "/new",
-                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _editNoteDefault.default), {}, void 0, false, {
+                            path: "/archived",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _archivedNotesDefault.default), {}, void 0, false, {
                                 fileName: "src/App.jsx",
                                 lineNumber: 20,
-                                columnNumber: 39
+                                columnNumber: 44
                             }, void 0)
                         }, void 0, false, {
                             fileName: "src/App.jsx",
@@ -25001,32 +24990,44 @@ function App() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            path: "/edit/:id",
+                            path: "/new",
                             element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _editNoteDefault.default), {}, void 0, false, {
                                 fileName: "src/App.jsx",
                                 lineNumber: 21,
-                                columnNumber: 44
+                                columnNumber: 39
                             }, void 0)
                         }, void 0, false, {
                             fileName: "src/App.jsx",
                             lineNumber: 21,
                             columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            path: "/edit/:id",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _editNoteDefault.default), {}, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 22,
+                                columnNumber: 44
+                            }, void 0)
+                        }, void 0, false, {
+                            fileName: "src/App.jsx",
+                            lineNumber: 22,
+                            columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/App.jsx",
-                    lineNumber: 17,
+                    lineNumber: 18,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/App.jsx",
-            lineNumber: 10,
+            lineNumber: 11,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "src/App.jsx",
-        lineNumber: 9,
+        lineNumber: 10,
         columnNumber: 5
     }, this);
 }
@@ -25039,7 +25040,7 @@ $RefreshReg$(_c, "App");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router-dom":"61z4w","./pages/ActiveNotes":"j2buf","./pages/ArchivedNotes":"eeXBv","./pages/EditNote":"7j25R","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"61z4w":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router-dom":"61z4w","./pages/ActiveNotes":"j2buf","./pages/ArchivedNotes":"eeXBv","./pages/EditNote":"7j25R","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./App.css":"6n0o6"}],"61z4w":[function(require,module,exports,__globalThis) {
 /**
  * React Router DOM v6.22.3
  *
@@ -31678,19 +31679,36 @@ function ActiveNotes() {
                                 lineNumber: 49,
                                 columnNumber: 15
                             }, this),
+                            note.category && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                        children: "Categor\xeda:"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/ActiveNotes.jsx",
+                                        lineNumber: 50,
+                                        columnNumber: 38
+                                    }, this),
+                                    " ",
+                                    note.category
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/pages/ActiveNotes.jsx",
+                                lineNumber: 50,
+                                columnNumber: 35
+                            }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: note.content
                             }, void 0, false, {
                                 fileName: "src/pages/ActiveNotes.jsx",
-                                lineNumber: 50,
-                                columnNumber: 15
+                                lineNumber: 51,
+                                columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                 onClick: ()=>navigate(`/edit/${note.id}`),
                                 children: "Editar"
                             }, void 0, false, {
                                 fileName: "src/pages/ActiveNotes.jsx",
-                                lineNumber: 51,
+                                lineNumber: 52,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -31701,7 +31719,7 @@ function ActiveNotes() {
                                 children: "Eliminar"
                             }, void 0, false, {
                                 fileName: "src/pages/ActiveNotes.jsx",
-                                lineNumber: 52,
+                                lineNumber: 53,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -31712,7 +31730,7 @@ function ActiveNotes() {
                                 children: "Archivar"
                             }, void 0, false, {
                                 fileName: "src/pages/ActiveNotes.jsx",
-                                lineNumber: 53,
+                                lineNumber: 54,
                                 columnNumber: 15
                             }, this)
                         ]
@@ -38890,19 +38908,36 @@ function ArchivedNotes() {
                                 lineNumber: 50,
                                 columnNumber: 15
                             }, this),
+                            note.category && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                        children: "Categor\xeda:"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/ArchivedNotes.jsx",
+                                        lineNumber: 51,
+                                        columnNumber: 38
+                                    }, this),
+                                    " ",
+                                    note.category
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/pages/ArchivedNotes.jsx",
+                                lineNumber: 51,
+                                columnNumber: 35
+                            }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: note.content
                             }, void 0, false, {
                                 fileName: "src/pages/ArchivedNotes.jsx",
-                                lineNumber: 51,
-                                columnNumber: 15
+                                lineNumber: 52,
+                                columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                 onClick: ()=>navigate(`/edit/${note.id}`),
                                 children: "Editar"
                             }, void 0, false, {
                                 fileName: "src/pages/ArchivedNotes.jsx",
-                                lineNumber: 52,
+                                lineNumber: 53,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -38913,7 +38948,7 @@ function ArchivedNotes() {
                                 children: "Eliminar"
                             }, void 0, false, {
                                 fileName: "src/pages/ArchivedNotes.jsx",
-                                lineNumber: 53,
+                                lineNumber: 54,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -38924,7 +38959,7 @@ function ArchivedNotes() {
                                 children: "Desarchivar"
                             }, void 0, false, {
                                 fileName: "src/pages/ArchivedNotes.jsx",
-                                lineNumber: 54,
+                                lineNumber: 55,
                                 columnNumber: 15
                             }, this)
                         ]
@@ -38984,10 +39019,12 @@ function EditNote() {
     const isEditing = Boolean(id);
     const [title, setTitle] = (0, _react.useState)('');
     const [content, setContent] = (0, _react.useState)('');
+    const [category, setCategory] = (0, _react.useState)('');
     (0, _react.useEffect)(()=>{
         if (isEditing) (0, _apiDefault.default).get(`/notes/${id}`).then((res)=>{
             setTitle(res.data.title);
             setContent(res.data.content);
+            setCategory(res.data.category || '');
         }).catch((err)=>console.error('Error al cargar nota', err));
     }, [
         id
@@ -38997,11 +39034,13 @@ function EditNote() {
         try {
             if (isEditing) await (0, _apiDefault.default).put(`/notes/${id}`, {
                 title,
-                content
+                content,
+                category
             });
             else await (0, _apiDefault.default).post('/notes', {
                 title,
-                content
+                content,
+                category
             });
             navigate('/');
         } catch (err) {
@@ -39014,7 +39053,7 @@ function EditNote() {
                 children: isEditing ? 'Editar Nota' : 'Nueva Nota'
             }, void 0, false, {
                 fileName: "src/pages/EditNote.jsx",
-                lineNumber: 40,
+                lineNumber: 43,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
@@ -39026,12 +39065,12 @@ function EditNote() {
                                 children: "T\xedtulo:"
                             }, void 0, false, {
                                 fileName: "src/pages/EditNote.jsx",
-                                lineNumber: 43,
+                                lineNumber: 46,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                 fileName: "src/pages/EditNote.jsx",
-                                lineNumber: 43,
+                                lineNumber: 46,
                                 columnNumber: 33
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -39044,13 +39083,45 @@ function EditNote() {
                                 }
                             }, void 0, false, {
                                 fileName: "src/pages/EditNote.jsx",
-                                lineNumber: 44,
+                                lineNumber: 47,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/pages/EditNote.jsx",
-                        lineNumber: 42,
+                        lineNumber: 45,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                children: "Categor\xeda:"
+                            }, void 0, false, {
+                                fileName: "src/pages/EditNote.jsx",
+                                lineNumber: 55,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                fileName: "src/pages/EditNote.jsx",
+                                lineNumber: 55,
+                                columnNumber: 36
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                value: category,
+                                onChange: (e)=>setCategory(e.target.value),
+                                style: {
+                                    width: '100%',
+                                    marginBottom: '1rem'
+                                }
+                            }, void 0, false, {
+                                fileName: "src/pages/EditNote.jsx",
+                                lineNumber: 56,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/EditNote.jsx",
+                        lineNumber: 54,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39059,12 +39130,12 @@ function EditNote() {
                                 children: "Contenido:"
                             }, void 0, false, {
                                 fileName: "src/pages/EditNote.jsx",
-                                lineNumber: 52,
+                                lineNumber: 64,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                 fileName: "src/pages/EditNote.jsx",
-                                lineNumber: 52,
+                                lineNumber: 64,
                                 columnNumber: 36
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
@@ -39077,13 +39148,13 @@ function EditNote() {
                                 }
                             }, void 0, false, {
                                 fileName: "src/pages/EditNote.jsx",
-                                lineNumber: 53,
+                                lineNumber: 65,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/pages/EditNote.jsx",
-                        lineNumber: 51,
+                        lineNumber: 63,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -39094,23 +39165,23 @@ function EditNote() {
                         children: isEditing ? 'Actualizar' : 'Crear'
                     }, void 0, false, {
                         fileName: "src/pages/EditNote.jsx",
-                        lineNumber: 61,
+                        lineNumber: 73,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/pages/EditNote.jsx",
-                lineNumber: 41,
+                lineNumber: 44,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/pages/EditNote.jsx",
-        lineNumber: 39,
+        lineNumber: 42,
         columnNumber: 5
     }, this);
 }
-_s(EditNote, "HeKV83C5dD4nRAxrCbVtG+TvKJY=", false, function() {
+_s(EditNote, "qfBCJ1Bz2b40MWO+KWarCUgOuDM=", false, function() {
     return [
         (0, _reactRouterDom.useParams),
         (0, _reactRouterDom.useNavigate)
@@ -39125,6 +39196,6 @@ $RefreshReg$(_c, "EditNote");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react-router-dom":"61z4w","../api":"38UJz"}]},["hiyDA","gYcKb"], "gYcKb", "parcelRequire10c2", {}, null, null, "http://localhost:1234")
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react-router-dom":"61z4w","../api":"38UJz"}],"6n0o6":[function() {},{}]},["hiyDA","gYcKb"], "gYcKb", "parcelRequire10c2", {}, null, null, "http://localhost:1234")
 
 //# sourceMappingURL=frontend.ad93b51f.js.map

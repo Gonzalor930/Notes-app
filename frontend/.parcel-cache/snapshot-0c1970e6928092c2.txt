@@ -22,7 +22,7 @@
 115C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\@parcel\transformer-posthtml\lib\loadPlugins.js133938019533939248 0
 114C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\caniuse-lite\data\features\devicepixelratio.js133938019549172584 0
 109C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\@parcel\types-internal\src\SemverRange.js133938019538870349 0
-72C:\Users\gonza\Desktop\Programacion\notes-app\frontend\package-lock.json133938044707592157 0
+72C:\Users\gonza\Desktop\Programacion\notes-app\frontend\package-lock.json133938100050576103 0
 126C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\caniuse-lite\data\features\justify-content-space-evenly.js133938019552544215 0
 84C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\clone\.npmignore133938019533735345 0
 91C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\semver\functions\inc.js133938019539930196 0
@@ -37,7 +37,7 @@
 88C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\weak-lru-cache\tests133938019536304872 1
 112C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\node-gyp-build-optional-packages\optional.js133938019535586796 0
 117C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\caniuse-lite\data\features\css-relative-colors.js133938019547953536 0
-86C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\.package-lock.json133938044707836527 0
+86C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\.package-lock.json133938100050877429 0
 90C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\tslib\modules\index.js133938019534483884 0
 123C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\midl.c133938019543446966 0
 121C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\@parcel\core\test\fixtures\config\subfolder\.parcelrc133938019538671103 0
@@ -62,7 +62,7 @@
 76C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\get-port133938019535551108 1
 91C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\@parcel\reporter-tracer133938019535219874 1
 117C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\caniuse-lite\data\features\once-event-listener.js133938019554421685 0
-67C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules133938044707074961 1
+67C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules133938100050075296 1
 99C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\caniuse-lite\data\regions\AF.js133938019538098902 0
 88C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\picocolors\README.md133938019535586796 0
 95C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\@parcel\packager-js\LICENSE133938019533150871 0
@@ -149,11 +149,11 @@
 112C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\caniuse-lite\data\features\css-appearance.js133938019545686168 0
 88C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\@swc\helpers\LICENSE133938019533056639 0
 97C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\@parcel\profiler\src\index.js133938019535361520 0
-73C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\@lmdb133938044707094925 1
+73C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\@lmdb133938100050096052 1
 94C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\nullthrows\nullthrows.d.ts133938019534396873 0
 101C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\semver\functions\compare-loose.js133938019537316093 0
-85C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\@msgpackr-extract133938044707094925 1
-75C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\@parcel133938044707094925 1
+85C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\@msgpackr-extract133938100050096052 1
+75C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\@parcel133938100050096052 1
 127C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\@swc\helpers\_\_class_check_private_static_field_descriptor133938019547858379 1
 96C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\semver\classes\comparator.js133938019536441946 0
 117C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mtest3.c133938019543934241 0
@@ -162,7 +162,7 @@
 117C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\@swc\helpers\_\_wrap_async_generator\package.json133938019550070438 0
 85C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\get-port\index.js133938019534411105 0
 90C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\scheduler\package.json133938019540085264 0
-72C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\@swc133938044707084943 1
+72C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\@swc133938100050085272 1
 86C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\chrome-trace-event133938019536197902 1
 98C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\react-router-dom\dist\dom.d.ts133938020136898408 0
 89C:\Users\gonza\Desktop\Programacion\notes-app\frontend\node_modules\axios\lib\env\data.js133938019541986170 0

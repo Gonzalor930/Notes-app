@@ -48,7 +48,8 @@ export default function ArchivedNotes() {
           {notes.map((note) => (
             <li key={note.id} style={{ marginBottom: '1rem' }}>
               <h3>{note.title}</h3>
-              <p>{note.content}</p>
+                {note.category && <p><strong>Categoría:</strong> {note.category}</p>}
+                <p>{note.content}</p>
               <button onClick={() => navigate(`/edit/${note.id}`)}>Editar</button>
               <button onClick={() => deleteNote(note.id)} style={{ marginLeft: '10px' }}>Eliminar</button>
               <button onClick={() => unarchiveNote(note.id)} style={{ marginLeft: '10px' }}>Desarchivar</button>
