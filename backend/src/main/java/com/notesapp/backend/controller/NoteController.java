@@ -1,9 +1,9 @@
 package com.notesapp.backend.controller;
 
+
 import com.notesapp.backend.model.Note;
 import com.notesapp.backend.service.NoteService;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
@@ -33,10 +33,9 @@ public class NoteController {
     }
 
     @PutMapping("/{id}")
-    public Note update(@PathVariable Long id, @RequestBody Note note) {
-        note.setId(id);
-        return noteService.update(note);
-    }
+public Note updateNote(@PathVariable Long id, @RequestBody Note updatedNote) {
+    return noteService.updateNote(id, updatedNote);
+}
 
     @DeleteMapping("/{id}")
     public void delete(@PathVariable Long id) {
@@ -47,4 +46,10 @@ public class NoteController {
     public Note toggleArchive(@PathVariable Long id) {
         return noteService.toggleArchive(id);
     }
+
+    @GetMapping("/{id}")
+public Note getNoteById(@PathVariable Long id) {
+    return noteService.getById(id);
+}
+
 }
