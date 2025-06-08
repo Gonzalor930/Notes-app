@@ -11,9 +11,9 @@ export default function App() {
       <div style={{ padding: '1rem' }}>
         <h1>Notas App</h1>
         <nav style={{ marginBottom: '1rem' }}>
-          <Link to="/" style={{ marginRight: '10px' }}>Notas Activas</Link>
-          <Link to="/archived" style={{ marginRight: '10px' }}>Notas Archivadas</Link>
-          <Link to="/new">Nueva Nota</Link>
+          <Link to="/" style={{ marginRight: '10px' }}>Notes Active</Link>
+          <Link to="/archived" style={{ marginRight: '10px' }}>Notes Archived</Link>
+          <Link to="/new">New Note</Link>
         </nav>
         <Routes>
           <Route path="/" element={<ActiveNotes />} />

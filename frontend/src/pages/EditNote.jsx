@@ -20,7 +20,7 @@ export default function EditNote() {
           setContent(res.data.content);
           setCategory(res.data.category || '');
         })
-        .catch(err => console.error('Error al cargar nota', err));
+        .catch(err => console.error('Error loading Note', err));
     }
   }, [id]);
 
@@ -34,16 +34,16 @@ export default function EditNote() {
       }
       navigate('/');
     } catch (err) {
-      console.error('Error al guardar nota', err);
+      console.error('Error saving Note ', err);
     }
   };
 
   return (
     <div>
-      <h2>{isEditing ? 'Editar Nota' : 'Nueva Nota'}</h2>
+      <h2>{isEditing ? 'Edit Note' : 'New Note'}</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Título:</label><br />
+          <label>Title</label><br />
           <input
             value={title}
             onChange={(e) => setTitle(e.target.value)}
@@ -52,7 +52,7 @@ export default function EditNote() {
           />
         </div>
         <div>
-          <label>Categoría:</label><br />
+          <label>Category</label><br />
             <input
               value={category}
               onChange={(e) => setCategory(e.target.value)}
@@ -61,7 +61,7 @@ export default function EditNote() {
         </div>
 
         <div>
-          <label>Contenido:</label><br />
+          <label>Content:</label><br />
           <textarea
             value={content}
             onChange={(e) => setContent(e.target.value)}
@@ -71,7 +71,7 @@ export default function EditNote() {
           />
         </div>
         <button type="submit" style={{ marginTop: '1rem' }}>
-          {isEditing ? 'Actualizar' : 'Crear'}
+          {isEditing ? 'Update' : 'Create'}
         </button>
       </form>
     </div>

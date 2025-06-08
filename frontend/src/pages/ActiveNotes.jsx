@@ -15,7 +15,7 @@ export default function ActiveNotes() {
       const res = await API.get('http://localhost:8080/api/notes/active');
       setNotes(res.data);
     } catch (err) {
-      console.error('Error al obtener notas activas', err);
+      console.error('Error getting active notes', err);
     }
   };
 
@@ -24,7 +24,7 @@ export default function ActiveNotes() {
       await API.delete(`/notes/${id}`);
       fetchNotes();
     } catch (err) {
-      console.error('Error al eliminar nota', err);
+      console.error('Error deleting Note', err);
     }
   };
 
@@ -33,25 +33,25 @@ export default function ActiveNotes() {
       await API.patch(`/notes/${id}/toggle-archive`);
       fetchNotes();
     } catch (err) {
-      console.error('Error al archivar nota', err);
+      console.error('Error archiving note', err);
     }
   };
 
   return (
     <div>
-      <h2>Notas Activas</h2>
+      <h2>Active Notes</h2>
       {notes.length === 0 ? (
-        <p>No hay notas activas.</p>
+        <p>There are no active notes.</p>
       ) : (
         <ul>
           {notes.map((note) => (
             <li key={note.id} style={{ marginBottom: '1rem' }}>
               <h3>{note.title}</h3>
-                {note.category && <p><strong>Categoría:</strong> {note.category}</p>}
+                {note.category && <p><strong>Category:</strong> {note.category}</p>}
                 <p>{note.content}</p>
-              <button onClick={() => navigate(`/edit/${note.id}`)}>Editar</button>
-              <button onClick={() => deleteNote(note.id)} style={{ marginLeft: '10px' }}>Eliminar</button>
-              <button onClick={() => archiveNote(note.id)} style={{ marginLeft: '10px' }}>Archivar</button>
+              <button onClick={() => navigate(`/edit/${note.id}`)}>Edit</button>
+              <button onClick={() => deleteNote(note.id)} style={{ marginLeft: '10px' }}>Delete</button>
+              <button onClick={() => archiveNote(note.id)} style={{ marginLeft: '10px' }}>File</button>
             </li>
           ))}
         </ul>

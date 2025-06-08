@@ -24932,7 +24932,7 @@ function App() {
                             style: {
                                 marginRight: '10px'
                             },
-                            children: "Notas Activas"
+                            children: "Notes Active"
                         }, void 0, false, {
                             fileName: "src/App.jsx",
                             lineNumber: 14,
@@ -24943,7 +24943,7 @@ function App() {
                             style: {
                                 marginRight: '10px'
                             },
-                            children: "Notas Archivadas"
+                            children: "Notes Archived"
                         }, void 0, false, {
                             fileName: "src/App.jsx",
                             lineNumber: 15,
@@ -24951,7 +24951,7 @@ function App() {
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                             to: "/new",
-                            children: "Nueva Nota"
+                            children: "New Note"
                         }, void 0, false, {
                             fileName: "src/App.jsx",
                             lineNumber: 16,
@@ -31632,7 +31632,7 @@ function ActiveNotes() {
             const res = await (0, _apiDefault.default).get('http://localhost:8080/api/notes/active');
             setNotes(res.data);
         } catch (err) {
-            console.error('Error al obtener notas activas', err);
+            console.error('Error getting active notes', err);
         }
     };
     const deleteNote = async (id)=>{
@@ -31640,7 +31640,7 @@ function ActiveNotes() {
             await (0, _apiDefault.default).delete(`/notes/${id}`);
             fetchNotes();
         } catch (err) {
-            console.error('Error al eliminar nota', err);
+            console.error('Error deleting Note', err);
         }
     };
     const archiveNote = async (id)=>{
@@ -31648,20 +31648,20 @@ function ActiveNotes() {
             await (0, _apiDefault.default).patch(`/notes/${id}/toggle-archive`);
             fetchNotes();
         } catch (err) {
-            console.error('Error al archivar nota', err);
+            console.error('Error archiving note', err);
         }
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: "Notas Activas"
+                children: "Active Notes"
             }, void 0, false, {
                 fileName: "src/pages/ActiveNotes.jsx",
                 lineNumber: 42,
                 columnNumber: 7
             }, this),
             notes.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "No hay notas activas."
+                children: "There are no active notes."
             }, void 0, false, {
                 fileName: "src/pages/ActiveNotes.jsx",
                 lineNumber: 44,
@@ -31682,7 +31682,7 @@ function ActiveNotes() {
                             note.category && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                        children: "Categor\xeda:"
+                                        children: "Category:"
                                     }, void 0, false, {
                                         fileName: "src/pages/ActiveNotes.jsx",
                                         lineNumber: 50,
@@ -31705,7 +31705,7 @@ function ActiveNotes() {
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                 onClick: ()=>navigate(`/edit/${note.id}`),
-                                children: "Editar"
+                                children: "Edit"
                             }, void 0, false, {
                                 fileName: "src/pages/ActiveNotes.jsx",
                                 lineNumber: 52,
@@ -31716,7 +31716,7 @@ function ActiveNotes() {
                                 style: {
                                     marginLeft: '10px'
                                 },
-                                children: "Eliminar"
+                                children: "Delete"
                             }, void 0, false, {
                                 fileName: "src/pages/ActiveNotes.jsx",
                                 lineNumber: 53,
@@ -31727,7 +31727,7 @@ function ActiveNotes() {
                                 style: {
                                     marginLeft: '10px'
                                 },
-                                children: "Archivar"
+                                children: "File"
                             }, void 0, false, {
                                 fileName: "src/pages/ActiveNotes.jsx",
                                 lineNumber: 54,
@@ -38861,7 +38861,7 @@ function ArchivedNotes() {
             //const res = await API.get('api/notes?archived=true');
             setNotes(res.data);
         } catch (err) {
-            console.error('Error al obtener notas archivadas', err);
+            console.error('Error getting Archived Notes', err);
         }
     };
     const deleteNote = async (id)=>{
@@ -38869,7 +38869,7 @@ function ArchivedNotes() {
             await (0, _apiDefault.default).delete(`/notes/${id}`);
             fetchNotes();
         } catch (err) {
-            console.error('Error al eliminar nota', err);
+            console.error('Error deleting Note', err);
         }
     };
     const unarchiveNote = async (id)=>{
@@ -38877,20 +38877,20 @@ function ArchivedNotes() {
             await (0, _apiDefault.default).patch(`/notes/${id}/toggle-archive`);
             fetchNotes();
         } catch (err) {
-            console.error('Error al desarchivar nota', err);
+            console.error('Error unarchive notes', err);
         }
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: "Notas Archivadas"
+                children: "Archived Notes"
             }, void 0, false, {
                 fileName: "src/pages/ArchivedNotes.jsx",
                 lineNumber: 43,
                 columnNumber: 7
             }, this),
             notes.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "No hay notas archivadas."
+                children: "There are no archived notes."
             }, void 0, false, {
                 fileName: "src/pages/ArchivedNotes.jsx",
                 lineNumber: 45,
@@ -38911,7 +38911,7 @@ function ArchivedNotes() {
                             note.category && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                        children: "Categor\xeda:"
+                                        children: "Category:"
                                     }, void 0, false, {
                                         fileName: "src/pages/ArchivedNotes.jsx",
                                         lineNumber: 51,
@@ -38934,7 +38934,7 @@ function ArchivedNotes() {
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                 onClick: ()=>navigate(`/edit/${note.id}`),
-                                children: "Editar"
+                                children: "Edit"
                             }, void 0, false, {
                                 fileName: "src/pages/ArchivedNotes.jsx",
                                 lineNumber: 53,
@@ -38945,7 +38945,7 @@ function ArchivedNotes() {
                                 style: {
                                     marginLeft: '10px'
                                 },
-                                children: "Eliminar"
+                                children: "Delete"
                             }, void 0, false, {
                                 fileName: "src/pages/ArchivedNotes.jsx",
                                 lineNumber: 54,
@@ -38956,7 +38956,7 @@ function ArchivedNotes() {
                                 style: {
                                     marginLeft: '10px'
                                 },
-                                children: "Desarchivar"
+                                children: "Unarchive"
                             }, void 0, false, {
                                 fileName: "src/pages/ArchivedNotes.jsx",
                                 lineNumber: 55,
@@ -39025,7 +39025,7 @@ function EditNote() {
             setTitle(res.data.title);
             setContent(res.data.content);
             setCategory(res.data.category || '');
-        }).catch((err)=>console.error('Error al cargar nota', err));
+        }).catch((err)=>console.error('Error loading Note', err));
     }, [
         id
     ]);
@@ -39044,13 +39044,13 @@ function EditNote() {
             });
             navigate('/');
         } catch (err) {
-            console.error('Error al guardar nota', err);
+            console.error('Error saving Note ', err);
         }
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: isEditing ? 'Editar Nota' : 'Nueva Nota'
+                children: isEditing ? 'Edit Note' : 'New Note'
             }, void 0, false, {
                 fileName: "src/pages/EditNote.jsx",
                 lineNumber: 43,
@@ -39062,7 +39062,7 @@ function EditNote() {
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                children: "T\xedtulo:"
+                                children: "Title"
                             }, void 0, false, {
                                 fileName: "src/pages/EditNote.jsx",
                                 lineNumber: 46,
@@ -39071,7 +39071,7 @@ function EditNote() {
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                 fileName: "src/pages/EditNote.jsx",
                                 lineNumber: 46,
-                                columnNumber: 33
+                                columnNumber: 31
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                                 value: title,
@@ -39095,7 +39095,7 @@ function EditNote() {
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                children: "Categor\xeda:"
+                                children: "Category"
                             }, void 0, false, {
                                 fileName: "src/pages/EditNote.jsx",
                                 lineNumber: 55,
@@ -39104,7 +39104,7 @@ function EditNote() {
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                 fileName: "src/pages/EditNote.jsx",
                                 lineNumber: 55,
-                                columnNumber: 36
+                                columnNumber: 34
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                                 value: category,
@@ -39127,7 +39127,7 @@ function EditNote() {
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                children: "Contenido:"
+                                children: "Content:"
                             }, void 0, false, {
                                 fileName: "src/pages/EditNote.jsx",
                                 lineNumber: 64,
@@ -39136,7 +39136,7 @@ function EditNote() {
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                 fileName: "src/pages/EditNote.jsx",
                                 lineNumber: 64,
-                                columnNumber: 36
+                                columnNumber: 34
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
                                 value: content,
@@ -39162,7 +39162,7 @@ function EditNote() {
                         style: {
                             marginTop: '1rem'
                         },
-                        children: isEditing ? 'Actualizar' : 'Crear'
+                        children: isEditing ? 'Update' : 'Create'
                     }, void 0, false, {
                         fileName: "src/pages/EditNote.jsx",
                         lineNumber: 73,
