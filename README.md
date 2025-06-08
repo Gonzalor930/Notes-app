@@ -63,7 +63,7 @@ The 15-second delay is necessary to avoid launching the frontend before the back
  If the frontend loads with an error (e.g. notes not fetched), simply refresh the page after a few seconds once the backend is ready.
 
 Once running, access the app at:
-📍 http://localhost:5173
+📍 http://localhost:1234 
 
 🔧 Backend – Spring Boot
 Features
